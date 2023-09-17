@@ -1,8 +1,8 @@
 import React from "react";
 import { Searchbar } from "react-native-paper";
 
+import { SafeArea } from "../../../components/utility/safe-area";
 import {
-  SafeArea,
   SearchContainer,
   RestaurantList,
 } from "./restaurants-screen.styles";
