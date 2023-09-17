@@ -10,6 +10,7 @@ import { StatusBar, FlatList, SafeAreaView } from "react-native";
 // `;
 export const SearchContainer = styled.View`
   padding: ${(props) => props.theme.space[3]};
+  background-color: white
 `;
 
 export const RestaurantList = styled(FlatList).attrs({

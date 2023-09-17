@@ -19,6 +19,8 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 import Ionicons from "react-native-vector-icons/Ionicons";
 
+import { resturantsRequest } from "./src/services/restaurant/restaurants.service"
+
 const Tab = createBottomTabNavigator();
 
 const Tab_Icon = {
