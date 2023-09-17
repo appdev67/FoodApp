@@ -75,13 +75,15 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
           <SectionEnd>
             {isClosedTemporarily && (
               <Text variant="label" style={{ color: "red" }}>
-                CLOSED TEMPORARLILY
+                CLOSED TEMPORARILY
               </Text>
             )}
-            <Spacer variant="left.medium" />
-            {isOpenNow && <Open xml={open} width={20} height={20} />}
-            <Spacer variant="left.medium" />
-            <Image style={{ width: 15, height: 15 }} source={{ uri: icon }} />
+            <Spacer position="left" size="large">
+              {isOpenNow && <Open xml={open} width={20} height={20} />}
+            </Spacer>
+            <Spacer position="left" size="large">
+              <Image style={{ width: 15, height: 15 }} source={{ uri: icon }} />
+            </Spacer>
           </SectionEnd>
         </Section>
         <Address>{address}</Address>
