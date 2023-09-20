@@ -17,9 +17,11 @@ export const Search = () => {
       <Searchbar
         placeholder="Search for a location"
         value={searchKeyword}
+        //on submit will send the text value to  LocationContext (keyword)
         onSubmitEditing={() => {
           search(searchKeyword);
         }}
+        //to let us change the default text
         onChangeText={(text) => {
           setSearchKeyword(text);
         }}
